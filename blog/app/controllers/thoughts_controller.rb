@@ -17,9 +17,15 @@ end
 
 def create
   @thought = Thought.new(thought_params)
+
+  if @thought.save
+    redirect_to @thought
+  else
+    render 'new'
+  end
  
-  @thought.save
-  redirect_to @thought
+  # @thought.save
+  # redirect_to @thought
 end
  
   def show

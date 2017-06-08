@@ -1,6 +1,21 @@
 <h1>Formulate A New Thought Drop</h1>
 
 <%= form_for :thought,url: thoughts_path do |f| %>
+
+  <% if @thought.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@thought.errors.count, "error") %> are prohibiting
+        this thought drop from being saved:
+      </h2>
+      <ul>
+        <% @thought.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
