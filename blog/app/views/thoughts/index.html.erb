@@ -1,0 +1,16 @@
+<h1>Thought Drop Listing</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @thoughts.each do |thought| %>
+    <tr>
+      <td><%= thought.title %></td>
+      <td><%= thought.text %></td>
+      <td><%= link_to 'Show', thought_path(thought) %></td>
+    </tr>
+  <% end %>
+</table>

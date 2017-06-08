@@ -1,5 +1,15 @@
 class ThoughtsController < ApplicationController
 
+
+def index
+  @thoughts = Thought.all
+end
+
+def show
+  @thought = Thought.find(params[:id])
+end
+
+
 def new
   @thought = Thought.new
 end
