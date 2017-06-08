@@ -15,3 +15,9 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+<%= form_for :thought, url: thoughts_path do |f| %>
+ ...
+<% end %>
+ 
+<%= link_to 'Back', thoughts_path %>
