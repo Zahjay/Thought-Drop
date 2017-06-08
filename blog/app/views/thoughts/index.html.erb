@@ -1,4 +1,5 @@
 <h1>Thought Drop Listing</h1>
+
 <%= link_to 'New Thought', new_thought_path %>
 <table>
   <tr>
@@ -11,6 +12,12 @@
       <td><%= thought.title %></td>
       <td><%= thought.text %></td>
       <td><%= link_to 'Show', thought_path(thought) %></td>
+      <td><%= link_to 'Edit', edit_thought_path(thought) %></td>
+      <td><%= link_to 'Destroy', thought_path(thought),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
+
+
