@@ -1,9 +1,5 @@
 
-<nav>
-<a href="/">Welcome</a>
-
-</nav>
-
+<h1>Thought Comments</h1> 
 
 <p>
   <strong>Title:</strong>
@@ -14,14 +10,17 @@
   <strong>Text:</strong>
   <%= @thought.text %>
 </p>
- 
-<h2>Comments</h2>
+
+<div class="comment-heading">Comments</div>
 <%= render @thought.comments %>
- 
-<h2>Add a comment:</h2>
+
+ <div class="show-form">
+
+<div class="add-a-comment">Add a comment</div>
 
 <%= render 'comments/form' %>
  
 <%= link_to 'Edit', edit_thought_path(@thought) %> |
-<%= link_to 'Back', thoughts_path %>
-
+<%= link_to 'Back', thoughts_path %> |
+<a href="/">Welcome</a>
+</div>
