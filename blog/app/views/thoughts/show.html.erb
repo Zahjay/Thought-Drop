@@ -1,4 +1,10 @@
 
+<nav>
+<a href="/">Welcome</a>
+
+</nav>
+
+
 <p>
   <strong>Title:</strong>
   <%= @thought.title %>
@@ -13,6 +19,7 @@
 <%= render @thought.comments %>
  
 <h2>Add a comment:</h2>
+
 <%= render 'comments/form' %>
  
 <%= link_to 'Edit', edit_thought_path(@thought) %> |

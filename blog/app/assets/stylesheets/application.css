@@ -13,3 +13,108 @@
  *= require_tree .
  *= require_self
  */
+
+/*.btn{
+  color: green;
+}*/
+
+
+
+body{
+  /*background:yellow;*/
+  background:white;
+  margin: 0 auto;
+  text-align: center;
+  /*background-image: url('http://i.imgur.com/A05XfB0.png')*/
+}
+
+ td a {
+
+   background: #551A8B;
+  background-image: -webkit-linear-gradient(top, #551A8B, #2980b9);
+  background-image: -moz-linear-gradient(top, #551A8B, #2980b9);
+  background-image: -ms-linear-gradient(top, #551A8B, #2980b9);
+  background-image: -o-linear-gradient(top, #551A8B, #2980b9);
+  background-image: linear-gradient(to bottom, #551A8B, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 3px 5px 3px 5px;
+  border: solid #551A8B 2px;
+  text-decoration: none;
+  
+ }
+
+
+ td{
+  padding: 10px;
+ }
+
+ a{
+   background: #551A8B;
+  background-image: -webkit-linear-gradient(top, black);
+  background-image: -moz-linear-gradient(top, #551A8B, #2980b9);
+  background-image: -ms-linear-gradient(top, #551A8B, #2980b9, #FFFF00);
+  background-image: -o-linear-gradient(top, #551A8B, #2980b9);
+  background-image: linear-gradient(to bottom, #551A8B, #2980b9,#FFFF00);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 3px 5px 3px 5px;
+  border: solid #551A8B 2px;
+  text-decoration: none;
+
+ }
+
+ 
+table{
+ 
+display: flex;
+justify-content: center;
+padding-top:10px;
+
+}
+
+/*td{
+
+ background-color: purple;
+
+}*/
+
+.div_for_comments
+
+{
+  background: yellow;
+  width:80%;
+  margin: 0 auto ;
+  border-radius: 10%;
+ }
+
+/*
+  .hero-section {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+*/
